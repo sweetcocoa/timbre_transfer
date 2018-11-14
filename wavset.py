@@ -76,7 +76,8 @@ class WavSet(torch.utils.data.Dataset):
             np.save(dest_dir, self.ys[i])
 
 if __name__ == "__main__":
-    wavset = WavSet(["./data/ukulele/Kalei Gamiao-04-Kiss From A Rose-320k.mp3"], srs=[22500])
+    # wavset = WavSet(["./data/ukulele/Kalei Gamiao-04-Kiss From A Rose-320k.mp3"], srs=[22500])
+    wavset = WavSet(["./cache/Kalei Gamiao-04-Kiss From A Rose-320k.npy"], srs=[22500])
 
     import pdb
     pdb.set_trace()
